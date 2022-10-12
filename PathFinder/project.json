@@ -44,6 +44,24 @@
         "testCaseId": "fdd0dafe-fe8d-4345-a2cc-7d2dc4bce9e5",
         "testCaseType": "TestCase",
         "fileName": "TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "35402746-0072-4bb2-8791-58d947f49441",
+        "testCaseType": "TestCase",
+        "fileName": "Sandbox\\Sebastian\\Dummy.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "e0f8a3f8-b9fe-4c5e-90c0-fac872388462",
+        "testCaseType": "TestCase",
+        "fileName": "Sandbox\\Fatime\\Dummy.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d6a9882b-6c8e-49ef-bb74-346539f5a101",
+        "testCaseType": "TestCase",
+        "fileName": "Sandbox\\Danu\\Dummy.xaml"
       }
     ],
     "modernBehavior": true
