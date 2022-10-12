@@ -57,6 +57,16 @@
         "testCaseId": "d6a9882b-6c8e-49ef-bb74-346539f5a101",
         "testCaseType": "TestCase",
         "fileName": "Sandbox\\Danu\\Dummy.xaml"
+      },
+      {
+        "templateType": "Generic",
+        "fileName": ".templates\\Login_Template.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "223d23fb-48a7-4fa8-8554-7c9fb88f3da3",
+        "testCaseType": "TestCase",
+        "fileName": "Sandbox\\Sebastian\\TestCase.xaml"
       }
     ],
     "modernBehavior": true
