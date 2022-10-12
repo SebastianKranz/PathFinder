@@ -48,12 +48,6 @@
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "35402746-0072-4bb2-8791-58d947f49441",
-        "testCaseType": "TestCase",
-        "fileName": "Sandbox\\Sebastian\\Dummy.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
         "testCaseId": "e0f8a3f8-b9fe-4c5e-90c0-fac872388462",
         "testCaseType": "TestCase",
         "fileName": "Sandbox\\Fatime\\Dummy.xaml"
