@@ -73,7 +73,7 @@
         "editingStatus": "InProgress",
         "testCaseId": "223d23fb-48a7-4fa8-8554-7c9fb88f3da3",
         "testCaseType": "TestCase",
-        "fileName": "Sandbox\\Sebastian\\TestCase.xaml"
+        "fileName": "Sandbox\\Sebastian\\GUI_Login.xaml"
       }
     ],
     "modernBehavior": true
