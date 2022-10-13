@@ -81,6 +81,8 @@
   "expressionLanguage": "VisualBasic",
   "isTemplate": false,
   "templateProjectData": {},
-  "publishData": {},
+  "publishData": {
+    "iconUrl": ".package/Pathfinder_Profil.png"
+  },
   "targetFramework": "Legacy"
 }
