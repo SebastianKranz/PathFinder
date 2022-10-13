@@ -22,7 +22,7 @@
       "serviceDocument": ".entities/EntitiesStore.json",
       "tenantName": "PathFinder",
       "namespace": "PathFinder",
-      "uniqueReference": "52vV6kBvMKYrLbQPhGenvSTg9ONpouKBowZ8796KJiQ="
+      "uniqueReference": "jf1+SJlAjBdzLUVWOeOpsh76ZGIyMm5ZXw70HI51q2g="
     }
   ],
   "schemaVersion": "4.0",
@@ -52,14 +52,7 @@
       "privateWorkflows": []
     },
     "processOptions": {
-      "ignoredFiles": [
-        "Sandbox/Danu/Login_And_Logout.xaml",
-        "Sandbox/Danu/MobileDeviceDeployment.xaml",
-        "Sandbox/Danu/Project_Dashboard_Sequence.xaml",
-        "Sandbox/Danu/Reusable_Login_Page.xaml",
-        "Sandbox/Sebastian/WiP/API_Device_Deployment.xaml",
-        "Sandbox/Sebastian/WiP/Query_DataService.xaml"
-      ]
+      "ignoredFiles": []
     },
     "fileInfoCollection": [
       {
@@ -69,8 +62,20 @@
         "fileName": "TestCase.xaml"
       },
       {
+        "editingStatus": "InProgress",
+        "testCaseId": "d6a9882b-6c8e-49ef-bb74-346539f5a101",
+        "testCaseType": "TestCase",
+        "fileName": "Sandbox\\Danu\\Dummy.xaml"
+      },
+      {
         "templateType": "Generic",
         "fileName": ".templates\\Login_Template.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "223d23fb-48a7-4fa8-8554-7c9fb88f3da3",
+        "testCaseType": "TestCase",
+        "fileName": "Sandbox\\Sebastian\\TestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
@@ -79,16 +84,22 @@
         "fileName": "Sandbox\\Fatime\\POST_Redeploy_devices.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "a73a1da2-4741-4a42-8dd4-f74bf907b3d7",
         "testCaseType": "TestCase",
         "fileName": "Sandbox\\Fatime\\DELETE_Release_Device.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "d51fe427-7657-46fd-ae82-ceb4e4b0896e",
         "testCaseType": "TestCase",
         "fileName": "Sandbox\\Fatime\\GET_Get_device_id.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "09cab19d-8996-486a-8932-76dd4aa3a54a",
+        "testCaseType": "TestCase",
+        "fileName": "Sandbox\\Sebastian\\GUI_TestLabs_MainFunctionality.xaml"
       },
       {
         "editingStatus": "InProgress",
@@ -97,28 +108,10 @@
         "fileName": "Sandbox\\Fatime\\POST_Project.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "ec5ea7c1-412b-4d06-8c27-cf3f0397b41f",
         "testCaseType": "TestCase",
         "fileName": "Sandbox\\Fatime\\API_Device_Deployment.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "09cab19d-8996-486a-8932-76dd4aa3a54a",
-        "testCaseType": "TestCase",
-        "fileName": "TestCases\\03_Approved\\System Integrations Tests\\GUI_TestLabs_MainFunctionality.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "8fae1cbd-42d9-4f7c-b244-3ec29321b8e8",
-        "testCaseType": "TestCase",
-        "fileName": "TestCases\\03_Approved\\System Integrations Tests\\GUI_Login_DataService.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "b565333b-51f0-4f5e-bd34-b5d4a2152c85",
-        "testCaseType": "TestCase",
-        "fileName": "TestCases\\03_Approved\\Integration Tests\\GET_DeployablesForSlot_DataService.xaml"
       }
     ],
     "modernBehavior": true
