@@ -22,7 +22,7 @@
       "serviceDocument": ".entities/EntitiesStore.json",
       "tenantName": "PathFinder",
       "namespace": "PathFinder",
-      "uniqueReference": "jf1+SJlAjBdzLUVWOeOpsh76ZGIyMm5ZXw70HI51q2g="
+      "uniqueReference": "52vV6kBvMKYrLbQPhGenvSTg9ONpouKBowZ8796KJiQ="
     }
   ],
   "schemaVersion": "4.0",
@@ -112,6 +112,12 @@
         "testCaseId": "8fae1cbd-42d9-4f7c-b244-3ec29321b8e8",
         "testCaseType": "TestCase",
         "fileName": "Sandbox\\Sebastian\\GUI_Login_DataService.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "b565333b-51f0-4f5e-bd34-b5d4a2152c85",
+        "testCaseType": "TestCase",
+        "fileName": "Sandbox\\Sebastian\\GET_DeployablesForSlot_DataService.xaml"
       }
     ],
     "modernBehavior": true
