@@ -73,12 +73,6 @@
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "223d23fb-48a7-4fa8-8554-7c9fb88f3da3",
-        "testCaseType": "TestCase",
-        "fileName": "Sandbox\\Sebastian\\TestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
         "testCaseId": "73d4449b-8d2b-4bb3-88c8-2a8c713059e7",
         "testCaseType": "TestCase",
         "fileName": "Sandbox\\Fatime\\POST_Redeploy_devices.xaml"
