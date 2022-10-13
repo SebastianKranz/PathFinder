@@ -3,6 +3,7 @@
   "description": "ASQF Test Automation Challenge",
   "main": "Main.xaml",
   "dependencies": {
+    "UiPath.DataService.Activities": "[21.10.1]",
     "UiPath.System.Activities": "[22.10.1]",
     "UiPath.Testing.Activities": "[22.4.3]",
     "UiPath.UIAutomation.Activities": "[22.10.1]",
@@ -16,7 +17,14 @@
       "uniqueReference": "O0B+byH6ju0vaqsEvTMp8UYoZrejjMew4UyfLjXQ0SM="
     }
   ],
-  "entitiesStores": [],
+  "entitiesStores": [
+    {
+      "serviceDocument": ".entities/EntitiesStore.json",
+      "tenantName": "PathFinder",
+      "namespace": "PathFinder",
+      "uniqueReference": "jf1+SJlAjBdzLUVWOeOpsh76ZGIyMm5ZXw70HI51q2g="
+    }
+  ],
   "schemaVersion": "4.0",
   "studioVersion": "22.4.6.0",
   "projectVersion": "1.0.0",
@@ -68,12 +76,6 @@
         "testCaseId": "223d23fb-48a7-4fa8-8554-7c9fb88f3da3",
         "testCaseType": "TestCase",
         "fileName": "Sandbox\\Sebastian\\TestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "9a025133-e664-4a19-819c-fd095549963e",
-        "testCaseType": "TestCase",
-        "fileName": "Sandbox\\Fatime\\GET_Get_devices_for_project.xaml"
       },
       {
         "editingStatus": "InProgress",

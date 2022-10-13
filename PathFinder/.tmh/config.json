@@ -1,6 +1,6 @@
 {
   "issueKeyTestcaseValues": {},
-  "testManagerBasePath": "https://cloud.uipath.com/qnitag/PathFinder/testmanager_",
+  "testManagerBasePath": "https://cloud.uipath.com/qnitag/PathFinder/testmanager_/",
   "defaultProject": {
     "id": "a2d5702e-1e12-0000-c25f-0b4488501f1c",
     "name": "PathFinder",
