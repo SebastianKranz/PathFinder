@@ -16,14 +16,7 @@
       "uniqueReference": "O0B+byH6ju0vaqsEvTMp8UYoZrejjMew4UyfLjXQ0SM="
     }
   ],
-  "entitiesStores": [
-    {
-      "serviceDocument": ".entities/EntitiesStore.json",
-      "tenantName": "PathFinder",
-      "namespace": "PathFinder",
-      "uniqueReference": "UYXJtey5QPoQTv0H0MJhy8gKx3SaJF/deQeNjsxXdOk="
-    }
-  ],
+  "entitiesStores": [],
   "schemaVersion": "4.0",
   "studioVersion": "22.4.6.0",
   "projectVersion": "1.0.0",
@@ -62,9 +55,9 @@
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "e0f8a3f8-b9fe-4c5e-90c0-fac872388462",
+        "testCaseId": "d6a9882b-6c8e-49ef-bb74-346539f5a101",
         "testCaseType": "TestCase",
-        "fileName": "Sandbox\\Fatime\\Dummy.xaml"
+        "fileName": "Sandbox\\Danu\\Dummy.xaml"
       },
       {
         "templateType": "Generic",
@@ -74,13 +67,31 @@
         "editingStatus": "InProgress",
         "testCaseId": "223d23fb-48a7-4fa8-8554-7c9fb88f3da3",
         "testCaseType": "TestCase",
-        "fileName": "Sandbox\\Sebastian\\GUI_Login.xaml"
+        "fileName": "Sandbox\\Sebastian\\TestCase.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "ad30fbcb-6cf9-4201-8310-67aff4a2b192",
+        "testCaseId": "9a025133-e664-4a19-819c-fd095549963e",
         "testCaseType": "TestCase",
-        "fileName": "Sandbox\\Danu\\Login.xaml"
+        "fileName": "Sandbox\\Fatime\\GET_Get_devices_for_project.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "73d4449b-8d2b-4bb3-88c8-2a8c713059e7",
+        "testCaseType": "TestCase",
+        "fileName": "Sandbox\\Fatime\\POST_Redeploy_devices.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a73a1da2-4741-4a42-8dd4-f74bf907b3d7",
+        "testCaseType": "TestCase",
+        "fileName": "Sandbox\\Fatime\\DELETE_Release_Device.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d51fe427-7657-46fd-ae82-ceb4e4b0896e",
+        "testCaseType": "TestCase",
+        "fileName": "Sandbox\\Fatime\\GET_Get_device_id.xaml"
       }
     ],
     "modernBehavior": true
@@ -88,8 +99,6 @@
   "expressionLanguage": "VisualBasic",
   "isTemplate": false,
   "templateProjectData": {},
-  "publishData": {
-    "iconUrl": ".package/Pathfinder_Profil.png"
-  },
+  "publishData": {},
   "targetFramework": "Legacy"
 }
