@@ -73,6 +73,12 @@
       },
       {
         "editingStatus": "InProgress",
+        "testCaseId": "223d23fb-48a7-4fa8-8554-7c9fb88f3da3",
+        "testCaseType": "TestCase",
+        "fileName": "Sandbox\\Sebastian\\TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
         "testCaseId": "73d4449b-8d2b-4bb3-88c8-2a8c713059e7",
         "testCaseType": "TestCase",
         "fileName": "Sandbox\\Fatime\\POST_Redeploy_devices.xaml"
@@ -93,13 +99,19 @@
         "editingStatus": "InProgress",
         "testCaseId": "09cab19d-8996-486a-8932-76dd4aa3a54a",
         "testCaseType": "TestCase",
-        "fileName": "Sandbox\\Sebastian\\GUI_Login_DataService.xaml"
+        "fileName": "Sandbox\\Sebastian\\GUI_TestLabs_MainFunctionality.xaml"
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "63cb3998-c68a-45d0-b68f-a123a7bf85f0",
+        "testCaseId": "588689b6-5e43-4a2a-9bc9-c6690ced7d82",
         "testCaseType": "TestCase",
-        "fileName": "Sandbox\\Sebastian\\GUI_TestLabs_MainFunctionality.xaml"
+        "fileName": "Sandbox\\Fatime\\POST_Project.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ec5ea7c1-412b-4d06-8c27-cf3f0397b41f",
+        "testCaseType": "TestCase",
+        "fileName": "Sandbox\\Fatime\\API_Device_Deployment.xaml"
       }
     ],
     "modernBehavior": true
