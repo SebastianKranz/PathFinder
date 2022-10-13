@@ -1,6 +1,6 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="GET_Get_device_id" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1042,1657" sap2010:WorkflowViewState.IdRef="GET_Get_device_id_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="clr-namespace:PathFinder;assembly=DataService.PathFinder" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:w="clr-namespace:webmate_API_v1;assembly=webmate_API_v1" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="GET_Get_device_id" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="770,2106" sap2010:WorkflowViewState.IdRef="GET_Get_device_id_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
-    <scg:List x:TypeArguments="x:String" Capacity="68">
+    <scg:List x:TypeArguments="x:String" Capacity="41">
       <x:String>System.Activities</x:String>
       <x:String>System.Activities.Statements</x:String>
       <x:String>System.Activities.Expressions</x:String>
@@ -37,10 +37,15 @@
       <x:String>System.Activities.DynamicUpdate</x:String>
       <x:String>PathFinder</x:String>
       <x:String>UiPath.DataService.Definition</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
     </scg:List>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="58">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="31">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>mscorlib</AssemblyReference>
@@ -71,22 +76,25 @@
       <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
       <AssemblyReference>DataService.PathFinder</AssemblyReference>
       <AssemblyReference>UiPath.DataService.Definition</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GET_Get_device_id" sap:VirtualizedContainerService.HintSize="418,1592" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GET_Get_device_id" sap:VirtualizedContainerService.HintSize="518,2041" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
-      <Variable x:TypeArguments="w:DeviceApiDTO" Name="reponseGetID" />
       <Variable x:TypeArguments="x:String" Name="response" />
       <Variable x:TypeArguments="x:String" Name="folderName" />
       <Variable x:TypeArguments="x:String" Name="filenameRequest" />
       <Variable x:TypeArguments="x:String" Name="filenameResponse" />
+      <Variable x:TypeArguments="njl:JObject" Name="myObj" />
+      <Variable x:TypeArguments="x:String" Name="jsonObjectString" />
+      <Variable x:TypeArguments="x:String" Name="device" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="376,820" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="476,646" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -106,7 +114,7 @@
           <OutArgument x:TypeArguments="x:String">[filenameRequest]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:String">[system.DateTime.Now.ToString("ddMMyyyy_hhmmssfff") + "_addSubscription_request.json"]</InArgument>
+          <InArgument x:TypeArguments="x:String">[system.DateTime.Now.ToString("ddMMyyyy_hhmmssfff") + "get_device_request.json"]</InArgument>
         </Assign.Value>
       </Assign>
       <Assign sap:VirtualizedContainerService.HintSize="334,60" sap2010:WorkflowViewState.IdRef="Assign_3">
@@ -114,22 +122,18 @@
           <OutArgument x:TypeArguments="x:String">[filenameResponse]</OutArgument>
         </Assign.To>
         <Assign.Value>
-          <InArgument x:TypeArguments="x:String">[system.DateTime.Now.ToString("ddMMyyyy_hhmmssfff") + "_addSubscription_response.json"]</InArgument>
+          <InArgument x:TypeArguments="x:String">[system.DateTime.Now.ToString("ddMMyyyy_hhmmssfff") + "get_device_response.json"]</InArgument>
         </Assign.Value>
       </Assign>
       <ui:CreateFile ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create File" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="CreateFile_1" Name="[filenameRequest]" Path="[folderName]" />
-      <ui:WriteTextFile File="{x:Null}" Text="{x:Null}" DisplayName="Write Text File" FileName="[folderName + &quot;\&quot; + filenameRequest]" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" />
     </Sequence>
-    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="376,254" sap2010:WorkflowViewState.IdRef="Sequence_3">
-      <Sequence.Variables>
-        <Variable x:TypeArguments="scg:IList(p:DeviceSlots)" Name="slots" />
-      </Sequence.Variables>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="476,877" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" sap2010:Annotation.AnnotationText="Returns a list of device properties which can be requested for deployment in the Slot and Project specified in the path." AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="https://demo.webmate.io/api/v1/slots/{slotId}/deployables" sap:VirtualizedContainerService.HintSize="204,162" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[response]" TimeoutMS="6000">
+      <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" sap2010:Annotation.AnnotationText="Returns a list of device properties which can be requested for deployment in the Slot and Project specified in the path." AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request" EnableSSLVerification="True" EndPoint="https://demo.webmate.io/api/v1/slots/{slotId}/deployables" sap:VirtualizedContainerService.HintSize="434,162" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[response]" TimeoutMS="6000">
         <ui:HttpClient.Attachments>
           <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
         </ui:HttpClient.Attachments>
@@ -152,15 +156,34 @@
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:HttpClient>
+      <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[folderName + &quot;\&quot; + filenameResponse]" sap:VirtualizedContainerService.HintSize="434,134" sap2010:WorkflowViewState.IdRef="WriteTextFile_3" Text="[response]" />
+      <ui:DeserializeJson x:TypeArguments="njl:JObject" DisplayName="Deserialize JSON" sap:VirtualizedContainerService.HintSize="434,59" sap2010:WorkflowViewState.IdRef="DeserializeJson`1_2" JsonObject="[myObj]" JsonString="[jsonObjectString]" />
+      <ui:ForEach x:TypeArguments="x:Object" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="434,310" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[myObj(“webmate.deviceUnavailable”).Cast(Of JObject)]">
+        <ui:ForEach.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="currentItem" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,185" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,93" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;test&quot;]" />
+            </Sequence>
+          </ActivityAction>
+        </ui:ForEach.Body>
+      </ui:ForEach>
     </Sequence>
-    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="376,346" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="476,346" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[folderName + &quot;\&quot; + filenameResponse]" sap:VirtualizedContainerService.HintSize="334,134" sap2010:WorkflowViewState.IdRef="WriteTextFile_2" Text="[response]" />
-      <ui:ReadTextFile File="{x:Null}" Content="[jsonObjectString]" DisplayName="Read Text File" FileName="[folderName + &quot;\&quot; + filenameResponse]" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+      <ui:ReadTextFile Content="{x:Null}" File="{x:Null}" DisplayName="Read Text File" FileName="[folderName + &quot;\&quot; + filenameResponse]" sap:VirtualizedContainerService.HintSize="334,80" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
     </Sequence>
   </Sequence>
 </Activity>
