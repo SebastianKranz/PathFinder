@@ -112,6 +112,12 @@
         "testCaseId": "ec5ea7c1-412b-4d06-8c27-cf3f0397b41f",
         "testCaseType": "TestCase",
         "fileName": "Sandbox\\Fatime\\API_Device_Deployment.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "8fae1cbd-42d9-4f7c-b244-3ec29321b8e8",
+        "testCaseType": "TestCase",
+        "fileName": "Sandbox\\Sebastian\\GUI_Login_DataService.xaml"
       }
     ],
     "modernBehavior": true
