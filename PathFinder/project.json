@@ -94,6 +94,12 @@
         "testCaseId": "d51fe427-7657-46fd-ae82-ceb4e4b0896e",
         "testCaseType": "TestCase",
         "fileName": "Sandbox\\Fatime\\GET_Get_device_id.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "09cab19d-8996-486a-8932-76dd4aa3a54a",
+        "testCaseType": "TestCase",
+        "fileName": "Sandbox\\Sebastian\\GUI_TestLabs_MainFunctionality.xaml"
       }
     ],
     "modernBehavior": true
