@@ -21,7 +21,7 @@
       "serviceDocument": ".entities/EntitiesStore.json",
       "tenantName": "PathFinder",
       "namespace": "PathFinder",
-      "uniqueReference": "PONyeGi20PcfJF8M6azDfchXyxm2Ahvol0RGjaQTUYg="
+      "uniqueReference": "UYXJtey5QPoQTv0H0MJhy8gKx3SaJF/deQeNjsxXdOk="
     }
   ],
   "schemaVersion": "4.0",
@@ -67,12 +67,6 @@
         "fileName": "Sandbox\\Fatime\\Dummy.xaml"
       },
       {
-        "editingStatus": "InProgress",
-        "testCaseId": "d6a9882b-6c8e-49ef-bb74-346539f5a101",
-        "testCaseType": "TestCase",
-        "fileName": "Sandbox\\Danu\\Dummy.xaml"
-      },
-      {
         "templateType": "Generic",
         "fileName": ".templates\\Login_Template.xaml"
       },
@@ -81,6 +75,12 @@
         "testCaseId": "223d23fb-48a7-4fa8-8554-7c9fb88f3da3",
         "testCaseType": "TestCase",
         "fileName": "Sandbox\\Sebastian\\GUI_Login.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "ad30fbcb-6cf9-4201-8310-67aff4a2b192",
+        "testCaseType": "TestCase",
+        "fileName": "Sandbox\\Danu\\Login.xaml"
       }
     ],
     "modernBehavior": true
