@@ -52,7 +52,14 @@
       "privateWorkflows": []
     },
     "processOptions": {
-      "ignoredFiles": []
+      "ignoredFiles": [
+        "Sandbox/Danu/Login_And_Logout.xaml",
+        "Sandbox/Danu/MobileDeviceDeployment.xaml",
+        "Sandbox/Danu/Project_Dashboard_Sequence.xaml",
+        "Sandbox/Danu/Reusable_Login_Page.xaml",
+        "Sandbox/Sebastian/WiP/API_Device_Deployment.xaml",
+        "Sandbox/Sebastian/WiP/Query_DataService.xaml"
+      ]
     },
     "fileInfoCollection": [
       {
@@ -60,12 +67,6 @@
         "testCaseId": "fdd0dafe-fe8d-4345-a2cc-7d2dc4bce9e5",
         "testCaseType": "TestCase",
         "fileName": "TestCase.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "d6a9882b-6c8e-49ef-bb74-346539f5a101",
-        "testCaseType": "TestCase",
-        "fileName": "Sandbox\\Danu\\Dummy.xaml"
       },
       {
         "templateType": "Generic",
@@ -96,13 +97,13 @@
         "fileName": "Sandbox\\Fatime\\POST_Project.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "ec5ea7c1-412b-4d06-8c27-cf3f0397b41f",
         "testCaseType": "TestCase",
         "fileName": "Sandbox\\Fatime\\API_Device_Deployment.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "09cab19d-8996-486a-8932-76dd4aa3a54a",
         "testCaseType": "TestCase",
         "fileName": "TestCases\\03_Approved\\System Integrations Tests\\GUI_TestLabs_MainFunctionality.xaml"
@@ -114,7 +115,7 @@
         "fileName": "TestCases\\03_Approved\\System Integrations Tests\\GUI_Login_DataService.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "b565333b-51f0-4f5e-bd34-b5d4a2152c85",
         "testCaseType": "TestCase",
         "fileName": "TestCases\\03_Approved\\Integration Tests\\GET_DeployablesForSlot_DataService.xaml"
