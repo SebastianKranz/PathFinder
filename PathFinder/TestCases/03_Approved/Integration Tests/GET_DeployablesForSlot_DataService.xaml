@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="GET_Device_Id" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="952,1216" sap2010:WorkflowViewState.IdRef="GET_Device_Id_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:p="clr-namespace:PathFinder;assembly=DataService.PathFinder" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uda="clr-namespace:UiPath.DataService.Activities;assembly=UiPath.DataService.Activities.Core" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="GET_Device_Id" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1391,2952" sap2010:WorkflowViewState.IdRef="GET_Device_Id_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:p="clr-namespace:PathFinder;assembly=DataService.PathFinder" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:uda="clr-namespace:UiPath.DataService.Activities;assembly=UiPath.DataService.Activities.Core" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="92">
       <x:String>System.Activities</x:String>
@@ -91,7 +91,7 @@
       <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GET_DeployablesForSlot_DataService" sap:VirtualizedContainerService.HintSize="518,1151" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GET_DeployablesForSlot_DataService" sap:VirtualizedContainerService.HintSize="1401,2887" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="response" />
       <Variable x:TypeArguments="x:String" Name="folderName" />
@@ -115,14 +115,14 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Query_DataService" sap:VirtualizedContainerService.HintSize="476,1059" sap2010:WorkflowViewState.IdRef="Sequence_12">
+    <Sequence DisplayName="Query_DataService" sap:VirtualizedContainerService.HintSize="1359,2795" sap2010:WorkflowViewState.IdRef="Sequence_12">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uda:QueryEntityRecords x:TypeArguments="p:DeviceSlots" ContinueOnError="False" DisplayName="Query Entity Records" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_2" OutputRecords="[varDataSet]" Skip="0" SortAscending="True" SortByField="Id" TimeoutInMs="30000" Top="100" TotalRecords="[varTotalRecords]">
+      <uda:QueryEntityRecords x:TypeArguments="p:DeviceSlots" ContinueOnError="False" DisplayName="Query Entity Records" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="1317,221" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_2" OutputRecords="[varDataSet]" Skip="0" SortAscending="True" SortByField="Id" TimeoutInMs="30000" Top="100" TotalRecords="[varTotalRecords]">
         <uda:QueryEntityRecords.FilterArguments>
           <uda:FilterArgument FilterActivityType="p:LoginCredentials">
             <uda:FilterArgument.Filter>
@@ -142,39 +142,39 @@
         </uda:QueryEntityRecords.FilterValues>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </uda:QueryEntityRecords>
-      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,51" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Total Entitites: &quot; + varTotalRecords.ToString]">
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1317,91" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Total Entitites: &quot; + varTotalRecords.ToString]">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             <x:Boolean x:Key="IsPinned">False</x:Boolean>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
       </ui:LogMessage>
-      <ui:ForEach x:TypeArguments="p:DeviceSlots" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="434,785" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[varDataSet]">
+      <ui:ForEach x:TypeArguments="p:DeviceSlots" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="1317,2311" sap2010:WorkflowViewState.IdRef="ForEach`1_3" Values="[varDataSet]">
         <ui:ForEach.Body>
           <ActivityAction x:TypeArguments="p:DeviceSlots">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="p:DeviceSlots" Name="item" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="284,661" sap2010:WorkflowViewState.IdRef="Sequence_11">
+            <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="1281,2187" sap2010:WorkflowViewState.IdRef="Sequence_11">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <Sequence DisplayName="Preconditions" sap:VirtualizedContainerService.HintSize="242,66" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <Sequence DisplayName="Preconditions" sap:VirtualizedContainerService.HintSize="1239,968" sap2010:WorkflowViewState.IdRef="Sequence_2">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <Sequence DisplayName="Prepare Logfiles" sap:VirtualizedContainerService.HintSize="376,643" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <Sequence DisplayName="Prepare Logfiles" sap:VirtualizedContainerService.HintSize="431,643" sap2010:WorkflowViewState.IdRef="Sequence_6">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -208,26 +208,7 @@
                   </Assign>
                   <ui:CreateFile ContinueOnError="{x:Null}" Output="{x:Null}" DisplayName="Create File" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="CreateFile_1" Name="[filenameRequest]" Path="[folderName]" />
                 </Sequence>
-                <uda:QueryEntityRecords x:TypeArguments="p:DeviceSlots" TotalRecords="{x:Null}" ContinueOnError="False" DisplayName="Query Entity Records" ExpansionDepth="2" sap:VirtualizedContainerService.HintSize="376,221" sap2010:WorkflowViewState.IdRef="QueryEntityRecords`1_1" OutputRecords="[varDataSet]" Skip="0" SortAscending="True" SortByField="Id" TimeoutInMs="30000" Top="100">
-                  <uda:QueryEntityRecords.FilterArguments>
-                    <uda:FilterArgument FilterActivityType="p:DeviceSlots">
-                      <uda:FilterArgument.Filter>
-                        <uda:GroupFilter Operator="and">
-                          <uda:GroupFilter.Filters>
-                            <scg:List x:TypeArguments="uda:SimpleFilter" Capacity="0" />
-                          </uda:GroupFilter.Filters>
-                          <uda:GroupFilter.Groups>
-                            <scg:List x:TypeArguments="uda:GroupFilter" Capacity="0" />
-                          </uda:GroupFilter.Groups>
-                        </uda:GroupFilter>
-                      </uda:FilterArgument.Filter>
-                    </uda:FilterArgument>
-                  </uda:QueryEntityRecords.FilterArguments>
-                  <uda:QueryEntityRecords.FilterValues>
-                    <scg:List x:TypeArguments="InArgument" Capacity="0" />
-                  </uda:QueryEntityRecords.FilterValues>
-                </uda:QueryEntityRecords>
-                <ui:MultipleAssign DisplayName="Assign Variables" sap:VirtualizedContainerService.HintSize="376,51" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
+                <ui:MultipleAssign DisplayName="Assign Variables" sap:VirtualizedContainerService.HintSize="431,193" sap2010:WorkflowViewState.IdRef="MultipleAssign_2">
                   <ui:MultipleAssign.AssignOperations>
                     <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
                       <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
@@ -266,16 +247,16 @@
                   </ui:MultipleAssign.AssignOperations>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </ui:MultipleAssign>
               </Sequence>
-              <Sequence DisplayName="Process" sap:VirtualizedContainerService.HintSize="242,66" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <Sequence DisplayName="Process" sap:VirtualizedContainerService.HintSize="1239,420" sap2010:WorkflowViewState.IdRef="Sequence_4">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -306,14 +287,14 @@
                 </ui:HttpClient>
                 <ui:WriteTextFile File="{x:Null}" DisplayName="Write Text File" FileName="[folderName + &quot;\&quot; + filenameResponse]" sap:VirtualizedContainerService.HintSize="334,132" sap2010:WorkflowViewState.IdRef="WriteTextFile_1" Text="[response]" />
               </Sequence>
-              <Sequence DisplayName="Verification" sap:VirtualizedContainerService.HintSize="242,234" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <Sequence DisplayName="Verification" sap:VirtualizedContainerService.HintSize="1239,504" sap2010:WorkflowViewState.IdRef="Sequence_5">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify StatusCode" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify StatusCode" sap:VirtualizedContainerService.HintSize="1197,61" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Equality" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
                   <uta:VerifyExpressionWithOperator.FirstExpression>
                     <InArgument x:TypeArguments="x:Int32">[varResponseStatus]</InArgument>
                   </uta:VerifyExpressionWithOperator.FirstExpression>
@@ -322,15 +303,15 @@
                   </uta:VerifyExpressionWithOperator.SecondExpression>
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
                 </uta:VerifyExpressionWithOperator>
-                <If Condition="[varValid = &quot;True&quot;]" DisplayName="Valid/Invalid Verification" sap:VirtualizedContainerService.HintSize="200,51" sap2010:WorkflowViewState.IdRef="If_1">
+                <If Condition="[varValid = &quot;True&quot;]" DisplayName="Valid/Invalid Verification" sap:VirtualizedContainerService.HintSize="1197,311" sap2010:WorkflowViewState.IdRef="If_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
@@ -370,10 +351,11 @@
                   </If.Else>
                 </If>
               </Sequence>
-              <Sequence DisplayName="Postconditions" sap:VirtualizedContainerService.HintSize="242,83" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <Sequence DisplayName="Postconditions" sap:VirtualizedContainerService.HintSize="1239,83" sap2010:WorkflowViewState.IdRef="Sequence_3">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </Sequence>

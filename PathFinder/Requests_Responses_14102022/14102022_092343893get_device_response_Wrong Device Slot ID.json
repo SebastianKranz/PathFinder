@@ -1,0 +1,1 @@
+Your request could not be processed: [E001003 / 93359] Authorization has failed: User Some(258e9552-1f03-4ca3-ace2-12208fa873a3) is lacking required permission on project e7502619-dfe2-4d2e-bd6c-e9bd8168c847 permissions: ["manage_device_slots"].
