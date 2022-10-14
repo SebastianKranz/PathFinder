@@ -102,16 +102,16 @@
         "fileName": "Sandbox\\Sebastian\\GUI_TestLabs_MainFunctionality.xaml"
       },
       {
-        "editingStatus": "InProgress",
-        "testCaseId": "588689b6-5e43-4a2a-9bc9-c6690ced7d82",
-        "testCaseType": "TestCase",
-        "fileName": "Sandbox\\Fatime\\POST_Project.xaml"
-      },
-      {
         "editingStatus": "Publishable",
         "testCaseId": "ec5ea7c1-412b-4d06-8c27-cf3f0397b41f",
         "testCaseType": "TestCase",
         "fileName": "Sandbox\\Fatime\\API_Device_Deployment.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "588689b6-5e43-4a2a-9bc9-c6690ced7d82",
+        "testCaseType": "TestCase",
+        "fileName": "Sandbox\\Fatime\\POST_Project.xaml"
       }
     ],
     "modernBehavior": true
