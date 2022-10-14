@@ -154,6 +154,12 @@
         "testCaseId": "99a9e0aa-ff1b-48fd-bafb-f0c26bbdbda5",
         "testCaseType": "TestCase",
         "fileName": "TestCases\\02_Refactor\\Reusable_Login_Page.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "44be5ee3-293b-40c3-8f49-587b17e17fa4",
+        "testCaseType": "TestCase",
+        "fileName": "TestCases\\03_Approved\\Integration Tests\\POST_Redeploy_devices.xaml"
       }
     ],
     "modernBehavior": true
