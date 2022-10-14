@@ -97,21 +97,21 @@
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "a73a1da2-4741-4a42-8dd4-f74bf907b3d7",
+        "testCaseId": "588689b6-5e43-4a2a-9bc9-c6690ced7d82",
         "testCaseType": "TestCase",
-        "fileName": "Testcases\\01_Review\\DELETE_Release_Device.xaml"
+        "fileName": "Testcases\\02_Refactor\\POST_Project.xaml"
       },
       {
         "editingStatus": "Publishable",
         "testCaseId": "d51fe427-7657-46fd-ae82-ceb4e4b0896e",
         "testCaseType": "TestCase",
-        "fileName": "Testcases\\01_Review\\GET_Get_device_id.xaml"
+        "fileName": "TestCases\\03_Approved\\Integration Tests\\GET_DeployablesForSlot.xaml"
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "588689b6-5e43-4a2a-9bc9-c6690ced7d82",
+        "testCaseId": "a73a1da2-4741-4a42-8dd4-f74bf907b3d7",
         "testCaseType": "TestCase",
-        "fileName": "Testcases\\02_Refactor\\POST_Project.xaml"
+        "fileName": "TestCases\\03_Approved\\Integration Tests\\DELETE_Release_Device.xaml"
       }
     ],
     "modernBehavior": true
